@@ -1,0 +1,7 @@
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="{{ .Site.Home.RelPermalink }}" aria-label="MICRO-ONE home"><span class="brand-symbol" aria-hidden="true">✳</span> MICRO<span class="brand-hyphen">–</span>ONE</a>
+<button class="menu-toggle" aria-expanded="false" aria-controls="navigation" hidden>Menu <span aria-hidden="true">☰</span></button>
+<nav id="navigation" aria-label="Main navigation">
+{{ $current := .RelPermalink }}{{ range slice (dict "name" "Project" "path" "project/") (dict "name" "Objectives" "path" "objectives/") (dict "name" "Consortium" "path" "consortium/") (dict "name" "Work plan" "path" "work-plan/") (dict "name" "Contact" "path" "contact/") }}
+<a href="{{ .path | relURL }}"{{ if eq $current (.path | relURL) }} aria-current="page"{{ end }}>{{ .name }}</a>{{ end }}
+</nav></div></header>

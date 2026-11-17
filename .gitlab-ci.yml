@@ -1,0 +1,25 @@
+# GitLab 17.9+; use a Linux amd64 Docker runner.
+image: buildpack-deps:bookworm
+
+variables:
+  HUGO_VERSION: "0.161.1"
+  TZ: "Europe/Stockholm"
+
+stages:
+  - deploy
+
+deploy-pages:
+  stage: deploy
+  script:
+    - mkdir -p /tmp/micro-one-hugo
+    - curl --fail --silent --show-error --location "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux-amd64.tar.gz" --output /tmp/micro-one-hugo/hugo.tar.gz
+    - tar -xzf /tmp/micro-one-hugo/hugo.tar.gz -C /tmp/micro-one-hugo
+    - /tmp/micro-one-hugo/hugo version
+    - /tmp/micro-one-hugo/hugo --gc --minify --panicOnWarning --baseURL "${CI_PAGES_URL%/}/"
+  pages:
+    publish: public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'

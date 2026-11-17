@@ -1,0 +1,4 @@
+{{ define "main" }}
+<section class="page-heading"><div class="wrap"><a class="back-link" href="{{ .Site.Home.RelPermalink }}">MICRO-ONE /</a><p class="eyebrow">{{ .Params.eyebrow | default "Project information" }}</p><h1>{{ .Title }}</h1><p class="lede">{{ .Description }}</p></div></section>
+<div class="wrap article-layout"><article class="prose">{{ .Content }}{{ if eq .Type "contact" }}{{ with .Site.Params.contactEmail }}<p><a class="button" href="mailto:{{ . }}">Email the project team ↗</a></p>{{ end }}{{ end }}</article><aside class="article-aside"><span class="eyebrow">At a glance</span><p>MICRO-ONE is developing metagenomic surveillance of soil, water and animals for livestock disease, antimicrobial resistance and zoonotic threats.</p><hr><strong>Current focus</strong><p>Vinnova-supported consortium building and development of a Horizon Europe proposal.</p><a href="{{ "sources/" | relURL }}">Read the status note ↗</a></aside></div>
+{{ end }}

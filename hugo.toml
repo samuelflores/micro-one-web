@@ -1,0 +1,10 @@
+baseURL = 'https://samuelflores.github.io/micro-one-web/'
+locale = 'en-GB'
+title = 'MICRO-ONE'
+enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term', 'RSS']
+[params]
+  description = 'Developing metagenomic surveillance of soil, water and animals for livestock disease threats entering Europe, antimicrobial resistance and zoonoses.'
+  contactEmail = ''
+[markup.goldmark.renderer]
+  unsafe = false
