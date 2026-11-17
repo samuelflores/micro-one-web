@@ -13,7 +13,6 @@ Investigate resistance across animal and environmental microbiomes, including so
 ## Zoonotic surveillance
 Connect environmental and animal monitoring with wastewater-based epidemiology to investigate emerging zoonotic threats. Zoonoses are infections that can pass between animals and people; the One Health approach considers these risks across animal, human and environmental settings.
 
-*Source for the surveillance priorities: Vinnova application, pp. 6–7 and 23–24; Part B draft, specific objectives SO2 and SO4. The emphasis on livestock disease entry into Europe and soil, water and animal metagenomics reflects the project lead’s clarification.*
 
 ## Sampling and metagenomic analysis
 The proposed programme would combine animal sampling with environmental sampling, microbiome profiling and standardised data processing. Soil, water and animals are the central monitoring domains presented here. The application and draft also consider feed, air and wastewater, with longitudinal sampling and multi-omics approaches to be refined during proposal preparation.
@@ -24,9 +23,7 @@ Plan an interoperable platform for data harmonisation, sharing and analysis. **F
 ## Explainable AI and sensors
 Develop interpretable models relating microbiome data to disease and resistance risks. Sensors would add complementary environmental and physiological measurements. Model performance, surveillance utility and any decision-support outputs would need to be evaluated in the future research.
 
-*Sources for methods: Vinnova application, pp. 6–7; Part B draft, “Methodological approach”.*
 
 ## Immediate planning outputs
-The funded planning work aims to deliver a developed consortium, scientific and implementation plans, a consolidated budget, external review and a submission-ready Horizon Europe proposal. See the [five planning work packages](../work-plan/).
+The funded planning work aims to deliver a developed consortium, scientific and implementation plans, a consolidated budget, external review and a submission-ready Horizon Europe proposal. 
 
-*Source: Vinnova application, pp. 8–19.*
